@@ -1,0 +1,98 @@
+{% extends 'app/base.html' %}
+{% load static %}
+
+{% block title %}Home{% endblock title %}
+
+
+{% block banner_slider %}
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="2500">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="{% static 'app/images/banners/b1.jpg' %}" class="d-block w-100" alt="banner image">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'app/images/banners/b2.jpg' %}" class="d-block w-100" alt="banner image">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'app/images/banners/b3.jpg' %}" class="d-block w-100" alt="banner image">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'app/images/banners/b4.jpg' %}" class="d-block w-100" alt="banner image">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+
+{% endblock banner_slider %}
+ 
+
+{% block information %}
+
+<div class="container">
+    <div class="row" style="background-color: purple; text-align: center; padding: 5px; color: white; border-bottom: 1px solid #000; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+        <h1>Products</h1>
+        <small class="fs-5">Welcome to Neel Dairy Delights where freshness meets flavor in every bite! Our website is a dairy lover's paradise, dedicated to showcasing the finest and most delectable dairy products crafted with passion and precision. Indulge your taste buds with our extensive range of premium Neel Dairy Products, ranging from velvety smooth yogurts to rich and creamy cheeses. Each product is meticulously crafted using the highest quality ingredients, sourced from local farms to ensure freshness and authenticity.</small>
+        
+    </div>
+</div>
+
+{% endblock information %}
+
+{% block main-content %}
+
+<div class="container">
+    <h2 class="text-center">Dairy Products</h2>
+    <br><br>
+    <div class="row inner-container">
+        <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+            <div class="goodnesser ghee" style="margin-bottom: 50px;">
+                <a href="#">
+                    <div class="goodnessercont text-center" style="background-color: #ffcccc; height: 300px; width: 300px;">
+                        <img src="{% static 'app/images/products/buffalo-ghee.png' %}" class="img-responsive center-block" alt="Ghee" style="height: 100%; width: 100%;">
+                        <p class="mlkpro">Ghee</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+            <div class="goodnesser curd" style="margin-bottom: 50px;">
+                <a href="#">
+                    <div class="goodnessercont text-center" style="background-color: #ccffcc; height: 300px; width: 300px;">
+                        <img src="{% static '\app\images\products\curd-premium.png' %}" class="img-responsive center-block" alt="curd" style="height: 100%; width: 100%;">
+                        <p class="mlkpro">Curd</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+            <div class="goodnesser Icebar" style="margin-bottom: 50px;">
+                <a href="#">
+                    <div class="goodnessercont text-center" style="background-color: #ffccff; height: 300px; width:300px;">
+                        <img src="{% static '\app\images\products\icbars.png' %}" class="img-responsive center-block" alt="curd" style="height: 100%; width: 100%;">
+                        <p class="mlkpro">Icebars</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        
+    </div>
+</div>
+
+
+<br/><br/>
+
+
+{% endblock main-content %}
+    
+    
